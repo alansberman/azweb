@@ -6,14 +6,14 @@ html, body {
 }
 header {
 	width: 100%;
-	background-color:#333333;
+	background-color:#000000;
     color:white;
-    height: 100px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     text-align:center;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
 p {
 	margin-right: 50px;
     margin-left: 50px;
@@ -21,51 +21,75 @@ p {
 	font-size: 14px;
 	font-family: "Verdana", sans-serif;
 }
+
+
+
 #contents-bar {
 	z-index:1;
 	position: fixed;
-	
-	background-color:#f1f1f1;
+	background-color:#999999;
 	padding-top: 0px;
 	line-height:30px;
     height:80px;
-    width:100px;
+    width:100%;
     font-size: 15px;
 }
-li {
-	display:inline;
-}
-ul {
 
-	list-style:none;
+
+#contents-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #999999;
 }
-figure > figcaption {
-	text-align:center;
-    font-size: 12px;
-	font-family: "Verdana", sans-serif;
+
+#contents-bar li {
+    float: left;
+    font-family: "Verdana", sans-serif;
+    padding-left: 50px;
 }
-figure > img {
-	padding-top: 55px;
-	padding-bottom: 10px;
-	display: block;
-	height: 400px;
-	width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+
+#contents-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-#content {
-	padding-top: 50px;
-	display: inline;
-    position: absolute;
-    padding-left: 210px;
+
+/* Change the link color to #111 (black) on hover */
+#contents-bar li a:hover {
+    background-color: #111;
 }
-.segment {
-	float: left;
-	display:inline;
-	padding-bottom: 50px;
+
+
+#contents-bar a:hover {
+	background-color: #555;
+    color: White;
 }
+
+
+
+
+a:link {
+	text-decoration: none;
+	color: DimGray;
+}
+
+#contents-bar a:hover {
+	background-color: #555;
+    color: White;
+}
+a:visited {
+    color: DimGray;
+}
+
+a:active {
+	font-weight: bold;
+		
+}
+
 
 #sub-header {
 	font-weight: bold;
@@ -91,116 +115,4 @@ figure > img {
 	color: Gray;
 }
 
-li a {
-	display: block;
-    padding: 8px;
-    background-color: #dddddd;
-    text-decoration: none;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-.active {
-    background-color: #4CAF50;
-}
 
-#queries > ul 
-{
-	padding-left: 80px;
-	list-style-type: circle;
-	text-align: justify;
-	font-size: 14px;
-	font-family: "Verdana", sans-serif;
-}
-
-#concept > ul 
-{
-	padding-left: 80px;
-	list-style-type: circle;
-	text-align: justify;
-	font-size: 14px;
-	font-family: "Verdana", sans-serif;
-}
-#iterations > ul 
-{
-	margin-right: 80px;
-	padding-left: 80px;
-	list-style-type: circle;
-	text-align: justify;
-	font-size: 14px;
-	font-family: "Verdana", sans-serif;
-}
-#teamwork > ul 
-{
-	padding-left: 80px;
-	list-style-type: circle;
-	text-align: justify;
-	font-size: 14px;
-	font-family: "Verdana", sans-serif;
-}
-#foot {
-	padding-bottom: 20px;
-	padding-top: 20px;
-    width: 100%;
-	text-align: center;
-    font-size: 14px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	background-color:SteelBlue;
-    color:white;
-} 
-.floated_img {
-	display:inline-block;
-		
-}
-.middle{
- margin: auto;
-}
-
-
-.floated_img > figure 
-{
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-right: 10;
-    float: left;
-}
-#heat > img {
-	padding-top: 55px;
-	padding-bottom: 10px;
-	display: block;
-	height: 500px;
-	
-	width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-#heat > img {
-	padding-top: 55px;
-	padding-bottom: 10px;
-	display: block;
-	height: 500px;
-	
-	width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-a {
-	padding:0 4px 0 0;
-	display:block;
-}
-
-a:link {
-	text-decoration: none;
-	color: DimGray;
-}
-
-#contents-bar a:hover {
-	background-color: #555;
-    color: White;
-}
-a:visited {
-    color: DimGray;
-}
-
-a:active {
-	font-weight: bold;
-		
-}
