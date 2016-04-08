@@ -14,14 +14,17 @@ header {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 img {
-	padding-left: 200px;
 	float: left;
-	width: 50%;
+	height: 100px;
+	width: 100px;
+	margin-right: 50px;
 }
-
+#space {
+	padding-top:80px;
+	padding-bottom:80px;
+}
 p {
 	margin-right: 50px;
-    margin-left: 50px;
 	text-align: justify;
 	font-size: 14px;
 	font-family: "Verdana", sans-serif;
@@ -42,7 +45,6 @@ p {
 
 #menubar {
 	z-index:1;
-	position: fixed;
 	display:inline-block;
 	background-color:#999999;
 	margin: 0 0 lem 0;
@@ -106,14 +108,22 @@ p {
     color: DimGray;
 }
 
+#no {
+	padding-top: 40px;
+	padding-left: 10px;
+	font-size: 18px;
+	font-family: "Verdana", sans-serif;
+	color: black;
+}
+
 #maillink {
+	padding-top:40px;
 	float:left;
 }
 #maillink a{
-	padding-top:3px;
-
-	padding-left: 50px;
-	font-size: 12px;
+	
+	padding-left: 5px;
+	font-size: 18px;
 	font-family: "Verdana", sans-serif;
 
 }
@@ -122,7 +132,6 @@ p {
 	font-weight: bold;
 	font-size: 50px;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	padding-top: 50px;
 	color: Gray;
 	padding-bottom: 20px;	
 }
