@@ -24,7 +24,7 @@ p {
 
 
 
-#contents-bar {
+#menubar {
 	z-index:1;
 	position: fixed;
 	display:inline-block;
@@ -37,7 +37,7 @@ p {
     font-size: 15px;
 }
 
-#contents-bar ul {
+#menubar ul {
 	width: 100%;
 	display: table;
 	table-layout: fixed;
@@ -50,14 +50,19 @@ p {
     background-color: #1a1a1a;
 }
 
-#contents-bar li {
+#selected {
+	background-color: #595959;
+
+}
+
+#menubar li {
     display: table-cell;
 	width: auto;
 	text-align: center;
     font-family: "Verdana", sans-serif;
 }
 
-#contents-bar li a {
+#menubar li a {
     display: block;
     color: white;
     text-align: center;
@@ -66,7 +71,7 @@ p {
 }
 
 /* Change the link color to #111 (black) on hover */
-#contents-bar li a:hover {
+#menubar li a:hover {
     background-color: #333333;
     
     color: White;
@@ -80,10 +85,7 @@ a:link {
 	color: DimGray;
 }
 
-#contents-bar a:hover {
-	background-color: #555;
-    color: White;
-}
+
 a:visited {
     color: DimGray;
 }
