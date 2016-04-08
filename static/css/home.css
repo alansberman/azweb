@@ -13,6 +13,11 @@ header {
     text-align:center;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+img {
+	padding-left: 200px;
+	float: left;
+	width: 50%;
+}
 
 p {
 	margin-right: 50px;
