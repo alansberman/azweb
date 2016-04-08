@@ -18,11 +18,11 @@ def contact():
 	return render_template("contact.html")
 
 @app.route("/art")
-def contact():
+def art():
 	return render_template("art.html")
 	
 @app.route("/photography")
-def contact():
+def photography():
 	return render_template("photography.html")
 
 if __name__ == '__main__':
