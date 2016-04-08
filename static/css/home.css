@@ -22,7 +22,18 @@ p {
 	font-family: "Verdana", sans-serif;
 }
 
+#content {
+	padding-top: 50px;
+	display: inline;
+    position: absolute;
+    padding-left: 150px;
+}
 
+.segment {
+	float: left;
+	display:inline;
+	padding-bottom: 50px;
+}
 
 #menubar {
 	z-index:1;
@@ -80,33 +91,40 @@ p {
 
 
 
-a:link {
+#menubar a:link {
 	text-decoration: none;
 	color: DimGray;
 }
 
 
-a:visited {
+#menubar a:visited {
     color: DimGray;
 }
 
-a:active {
-	font-weight: bold;
-		
+#maillink {
+	float:left;
 }
+#maillink a{
+	padding-top:3px;
 
+	padding-left: 50px;
+	font-size: 12px;
+	font-family: "Verdana", sans-serif;
+
+}
 
 #sub-header {
 	font-weight: bold;
-	font-size: 35px;
-	font-family: "Verdana", sans-serif;
-	padding-left: 40px;
+	font-size: 50px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	padding-top: 50px;
 	color: Gray;
 	padding-bottom: 20px;	
 }
 
 #sub-sub-header {
 	font-weight: bold;
+
 	font-size: 20px;
 	font-family: "Verdana", sans-serif;
 	padding-left: 45px;
@@ -114,6 +132,7 @@ a:active {
 }
 #sub-sub-sub-header {
 	font-weight: bold;
+	float: left;
 	font-size: 18px;
 	font-family: "Verdana", sans-serif;
 	padding-left: 48px;
