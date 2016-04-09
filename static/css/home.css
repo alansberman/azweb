@@ -135,7 +135,11 @@ p {
 	color: Gray;
 	padding-bottom: 20px;	
 }
-
+#man img {
+	padding-left: 200px;	
+	width:50%;
+	height:80%;
+}
 #sub-sub-header {
 	font-weight: bold;
 
