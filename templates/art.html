@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/static/vendor/jquery.alt-checkbox.css">
     <link rel="stylesheet" href="/static/vendor/jquery.alt-checkbox.icon-font.css">
     <link rel="stylesheet" href="/static/css/home.css">
+    <link rel="stylesheet" href="/static/css/gallery.css">
 </head>
 <body>
 	<header>
@@ -24,5 +25,36 @@
 		</ul>
 		</div>
 	</div>	
+	<div id="content">
+		<div id="section">
+			<div id="sub-header">Art</div>
+			<div id="sub-sub-header">Life Drawings</div>
+		<div id="gallery">
+		
+		
+		</div>
+	</div>
 </body>
+
+<!--Adapted from http://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive_js -->
+<script>
+var modal = document.getElementById('myModal');
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+var images = document.getElementsByTagName('img');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+var i;
+for (i = 0; i < images.length; i++) {
+   images[i].onclick = function(){
+       modal.style.display = "block";
+       modalImg.src = this.src;
+       modalImg.alt = this.alt;
+       captionText.innerHTML = this.nextElementSibling.innerHTML;
+   }
+}
+</script>
 </html>
+
