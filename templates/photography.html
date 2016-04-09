@@ -24,5 +24,71 @@
 		</ul>
 		</div>
 	</div>	
+<div id="content">
+		<div id="section">
+			<div id="sub-header">Photography</div>
+			<div id="gallery">
+				<div id="painting">
+					<img src="/static/art/art1.jpg">
+				</div>
+				<div id="painting">
+					<img src="../static/art/art2.jpg">
+				</div>
+				<div id="painting">
+					<img src="../static/art/art3.jpg">
+				</div>
+				<div id="painting">
+					<img src="../static/art/art4.jpg">
+				</div>
+				<div id="painting">
+					<img src="../static/art/art5.jpg">
+				</div>
+				<div id="painting">
+					<img src="../static/art/art6.jpg">
+				</div>
+				<div id="painting">
+					<img src="../static/art/art7.jpg">
+				</div>
+				<div id="painting">
+					<img src="../static/art/art8.jpg">
+				</div>
+				<div id="painting">
+					<img src="../static/art/art9.jpg">
+				</div>
+				<div id="painting">
+					<img src="../static/art/art10.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="clearfix"></div>
+	<div id="mdl" class="modal">
+	<span class="close" onclick="document.getElementById('mdl').style.display='none'">×</span>
+
+	<img class="modal-content" id="img01">
+
+	</div>
 </body>
+<script rel="script" type="text/javascript" src="../static/vendor/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="../static/vendor/jquery.leanModal.min.js"></script>
+<script rel="script" type="text/javascript" src="../static/vendor/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+<!--Heavily adapted from http://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive_js-->
+<script>
+	var modal = document.getElementById('mdl');
+	var span = document.getElementsByClassName("close")[0];
+	span.onclick = function() { 
+		modal.style.display = "none";
+	}
+	var images = document.getElementsByTagName('img');
+	var modalImg = document.getElementById("img01");
+	var i;
+	for (i = 0; i < images.length; i++) {
+		images[i].onclick = function(){
+			modal.style.display = "block";
+			modalImg.src = this.src;
+		}
+	}
+</script>
+
 </html>
