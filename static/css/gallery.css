@@ -1,73 +1,61 @@
-/*Adapted from http://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive_js*/
+/* Heavily adapted from http://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive_js*/
 
-img {
-	border: 1px solid #ccc;
-	width: 50%;
-	cursor: pointer;
+#gallery {
+	padding-left: 50px;
+	padding-right: 150px;
+	padding-bottom: 100px;
+	display: inline-block;
 }
 
-img:hover {
-	border: 1px solid #777;
+#painting {
+	float:left;
+	margin-top: 50px;
 }
-
-modal {
-	display: none;
-	position: fixed;
-	z-index: 1;
-	padding-top: 150px;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	background-color: #333333;
+.modal{
+	padding-top:100px;
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    overflow:auto;
+    background-color: rgba(0,0,0,0.9);
+    display: none;
 }
+.modal-content {
+    margin-left: 300px;
+    margin-right: 300px;
+    display: block;
+    width: 50%;
+	height: 80%;
+	
 
-modal-content {
-	margin: auto;
-	display: block;
-	width: 80%;
-	max-width: 700px;
 }
-
-@-webkit-keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0.1)} 
-    to {transform:scale(1)}
-}
-
-close {
-	position: absolute;
-	top: 20px;
-	right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-@media only screen and (max-width: 700px){
-    responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-    modal-content {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    responsive {
-        width: 100%;
-    }
-}
-
-clearfix:after {
+.clearfix:after {
     content: "";
     display: table;
     clear: both;
 }
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+#painting img {
+	width: 400px;
+	border: 1px solid #ccc;
+	height: 300px;
+}
+
+#painting img:hover{
+	border: 1px solid #777;
+	cursor: pointer;
+}
+
+
